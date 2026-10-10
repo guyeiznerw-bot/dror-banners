@@ -132,44 +132,102 @@ footer{padding-block:20px 96px;color:var(--ink-muted);font-size:14px}
   <div class="lockup"><span class="ring"><img src="data:image/png;base64,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" alt="" width="96" height="63"></span>
   <span class="lock-name"><span class="lock-he">גרינר דיגיטל מרקטינג</span><bdi class="lock-lt" dir="ltr" lang="en">Greener Digital Marketing</bdi></span></div>
   <h1>באנרים לגיוס למרכז דרור - שלוש אפשרויות</h1>
-  <p class="intro">שלושה באנרים בסגנון החדש. לצד כל באנר מופיע הטקסט שילווה אותו במודעה.</p>
+  <p class="intro">שלושה באנרים בסגנון החדש. לצד כל באנר מופיעים הטקסטים שילוו אותו במודעה, בשתי גרסאות.</p>
 </header>
 <main>
 <article class="bn">
   <div><a class="img" href="7-band-football.png" target="_blank" rel="noopener"><img src="7-band-football.png" width="1080" height="1080" alt="אפשרות 1: באנר גיוס של מרכז קהילתי דרור, כדורגל"></a><p class="hint">לחיצה על הבאנר פותחת אותו בגודל מלא.</p></div>
   <div class="otext"><p class="label">אפשרות 1</p><h2>כדורגל</h2>
-    <h3>הטקסט הראשי במודעה</h3><p class="adtext">במרכז קהילתי דרור אנחנו מגייסים רכז.ת נוער, במשרה מלאה.
-פרטי המשרה ושליחת קורות חיים בעמוד המשרות של המרכז.
+    <h3>כותרת, גרסה 1</h3><p class="adtext">אנחנו מגייסים למשרת רכז.ת נוער</p>
+    <h3>כותרת, גרסה 2</h3><p class="adtext">עבודה עם משמעות אמיתית</p>
+    <h3>הטקסט הראשי במודעה, גרסה 1</h3><p class="adtext">אנחנו מגייסים רכז.ת נוער למשרה מלאה במרכז קהילתי דרור.
+בואו להיות דמות משמעותית בחייהם של בני נוער וחלק מרשת עירונית מקצועית ומשפיעה.
+קחו חלק בהובלת פעילות הנוער במרכז כחלק מרשת מנ&quot;ש (מרחבי נוער שכונתיים) העירונית, פיתוח קבוצות, יוזמות ותוכניות מנהיגות, וליווי צוות ההדרכה.
 
-להיות דמות משמעותית בחייהם של בני נוער, ולהיות חלק מרשת עירונית מקצועית.
-התפקיד: הובלת פעילות הנוער במרכז כחלק מרשת מנ&quot;ש (מרחבי נוער שכונתיים) העירונית, פיתוח קבוצות, יוזמות ותוכניות מנהיגות, וליווי צוות ההדרכה.
 המרכז פועל עם קהילת מבקשי המקלט וחסרי המעמד בדרום תל־אביב-יפו.
 העבודה כוללת שעות אחר הצהריים והערב.
-נדרש ניסיון משמעותי בעבודה עם בני נוער.</p>
-    <h3>כותרת</h3><p class="adtext">רכז.ת נוער, משרה מלאה</p>
+נדרש ניסיון משמעותי בעבודה עם בני נוער.
+לפרטים נוספים ושליחת קורות חיים 👇</p>
+    <h3>הטקסט הראשי במודעה, גרסה 2</h3><p class="adtext">לראות את הפוטנציאל של בני נוער, וללוות אותם בדרך לגיבוש זהות, תחושת שייכות ותמונת עתיד.
+אם העבודה עם בני נוער היא האהבה שלכם - המקום שלכם איתנו, במרכז קהילתי דרור.
+אנחנו מגייסים למשרה מלאה רכז.ת נוער להובלת פעילות הנוער במרכז בשעות אחר הצהריים והערב, שפועל עם קהילת מבקשי המקלט וחסרי המעמד בדרום תל־אביב-יפו.
+
+למה כדאי לכם להצטרף?
+🟡 להיות דמות משמעותית בחייהם של בני נוער.
+🟡 להוביל עשייה חינוכית ייחודית: קבוצות, יוזמות ותוכניות מנהיגות.
+🟡 להיות חלק מרשת מנ&quot;ש (מרחבי נוער שכונתיים), רשת עירונית מקצועית ומשפיעה.
+🟡 לעבוד בצוות מקצועי ומגובש.
+
+דרישות לתפקיד:
+🔷 ניסיון משמעותי בעבודה עם בני נוער - חובה.
+🔷 ניסיון בהובלת קבוצות או צוותים, יתרון.
+🔷 יכולת יצירת קשר, הכלה והצבת גבולות.
+🔷 עצמאות, יוזמה, יצירתיות ומחויבות חברתית.
+
+לפרטים נוספים ושליחת קורות חיים 👇</p>
     <h3>תיאור</h3><p class="adtext">מרכז קהילתי דרור, דרום תל־אביב-יפו</p></div>
 </article><article class="bn">
   <div><a class="img" href="8-tabs-kite.png" target="_blank" rel="noopener"><img src="8-tabs-kite.png" width="1080" height="1080" alt="אפשרות 2: באנר גיוס של מרכז קהילתי דרור, עפיפון"></a><p class="hint">לחיצה על הבאנר פותחת אותו בגודל מלא.</p></div>
   <div class="otext"><p class="label">אפשרות 2</p><h2>עפיפון</h2>
-    <h3>הטקסט הראשי במודעה</h3><p class="adtext">במרכז קהילתי דרור אנחנו מגייסים רכז.ת ילדים, עם יוזמה, יצירתיות, יכולת הובלה ואהבה גדולה לחינוך.
-פרטי המשרה ושליחת קורות חיים בעמוד המשרות של המרכז.
+    <h3>כותרת, גרסה 1</h3><p class="adtext">אנחנו מגייסים למשרת רכז.ת ילדים</p>
+    <h3>כותרת, גרסה 2</h3><p class="adtext">להוביל עשייה חינוכית משמעותית לילדים</p>
+    <h3>הטקסט הראשי במודעה, גרסה 1</h3><p class="adtext">אנחנו מגייסים רכז.ת ילדים, עם יוזמה, יצירתיות, יכולת הובלה ואהבה גדולה לחינוך לעבודה במרכז קהילתי דרור.
 
-התפקיד: תכנון והובלה של פעילות חינוכית בלתי פורמלית לילדים, ליווי מקצועי של צוות ההדרכה, וקשר עם ילדים, הורים וגורמים בקהילה.
+התפקיד כולל תכנון והובלה של פעילות חינוכית בלתי פורמלית לילדים, ליווי מקצועי של צוות ההדרכה, וקשר עם ילדים, הורים וגורמים בקהילה.
 המרכז פועל עם קהילת מבקשי המקלט וחסרי המעמד בדרום תל־אביב-יפו.
-משרה מלאה, הכוללת עבודה בשעות אחר הצהריים.
-נדרש ניסיון בעבודה חינוכית עם ילדים.</p>
-    <h3>כותרת</h3><p class="adtext">רכז.ת ילדים, משרה מלאה</p>
+אנחנו מגייסים למשרה מלאה, הכוללת עבודה בשעות אחר הצהריים.
+נדרש ניסיון בעבודה חינוכית עם ילדים.
+לפרטים נוספים ושליחת קורות חיים 👇</p>
+    <h3>הטקסט הראשי במודעה, גרסה 2</h3><p class="adtext">אנחנו צוות שמאמין בכוחו של חינוך לשנות מציאות.
+אם העבודה החינוכית עם ילדים היא המקצוע שלכם, ויש בכם יוזמה, יצירתיות ויכולת הובלה, המקום שלכם איתנו - במרכז קהילתי דרור.
+
+אנחנו מגייסים רכז.ת ילדים למשרה מלאה הכוללת עבודה בשעות אחר הצהריים, לתכנון ולהובלה של פעילות חינוכית בלתי פורמלית לילדים.
+המרכז פועל עם קהילת מבקשי המקלט וחסרי המעמד בדרום תל־אביב-יפו.
+
+למה כדאי לכם להצטרף?
+🟡 להוביל עשייה חינוכית משמעותית עם ילדים.
+🟡 לפתח מענים חינוכיים מותאמים לצורכי הילדים.
+🟡 להוביל פרויקטים, אירועים ופעילויות קהילתיות.
+🟡 להיות חלק מצוות מקצועי ומגובש.
+
+דרישות לתפקיד:
+🔷 ניסיון בעבודה חינוכית עם ילדים - חובה.
+🔷 ניסיון בריכוז פעילות או בהובלת צוות, יתרון.
+🔷 יכולת ארגון, יוזמה ועבודה עצמאית.
+🔷 רגישות תרבותית, יחסי אנוש מצוינים ותפיסה חברתית.
+
+לפרטים נוספים ושליחת קורות חיים 👇</p>
     <h3>תיאור</h3><p class="adtext">מרכז קהילתי דרור, דרום תל־אביב-יפו</p></div>
 </article><article class="bn">
   <div><a class="img" href="9-frame-clay.png" target="_blank" rel="noopener"><img src="9-frame-clay.png" width="1080" height="1080" alt="אפשרות 3: באנר גיוס של מרכז קהילתי דרור, פיסול בחימר"></a><p class="hint">לחיצה על הבאנר פותחת אותו בגודל מלא.</p></div>
   <div class="otext"><p class="label">אפשרות 3</p><h2>פיסול בחימר</h2>
-    <h3>הטקסט הראשי במודעה</h3><p class="adtext">במרכז קהילתי דרור אנחנו מגייסים צוות: רכז.ת נוער ורכז.ת ילדים במשרה מלאה, ומדריכים.ות לילדים ונוער במשרה חלקית.
-פרטי המשרות ושליחת קורות חיים בעמוד המשרות של המרכז.
+    <h3>כותרת, גרסה 1</h3><p class="adtext">אנחנו מגייסים למשרות רכז.ת נוער ורכז.ת ילדים</p>
+    <h3>כותרת, גרסה 2</h3><p class="adtext">עבודה משמעותית עם השפעה על חיי ילדים ונוער</p>
+    <h3>הטקסט הראשי במודעה, גרסה 1</h3><p class="adtext">אנחנו במרכז קהילתי דרור מגייסים לצוות רכז.ת נוער ורכז.ת ילדים במשרה מלאה, ומדריכים.ות לילדים ונוער במשרה חלקית.
 
-עבודה חינוכית עם ילדים ובני נוער, בשעות אחר הצהריים ובחלק מהתפקידים גם בערב, בצוות מקצועי ומגובש.
+עבודה חינוכית עם ילדים ובני נוער, בשעות אחר הצהריים ובחלק מהתפקידים גם בערב - הצטרפו לצוות מקצועי ומגובש.
 המרכז פועל עם קהילת מבקשי המקלט וחסרי המעמד בדרום תל־אביב-יפו.
-המשרה החלקית מתאימה גם לסטודנטים.ות.</p>
-    <h3>כותרת</h3><p class="adtext">מגייסים רכזים.ות ומדריכים.ות</p>
+המשרה החלקית מתאימה גם לסטודנטים.ות.
+
+לפרטים נוספים ושליחת קורות חיים 👇</p>
+    <h3>הטקסט הראשי במודעה, גרסה 2</h3><p class="adtext">אם העבודה החינוכית עם ילדים ובני נוער היא המקצוע שלכם, המקום שלכם איתנו - במרכז קהילתי דרור.
+אנחנו מגייסים רכז.ת נוער ורכז.ת ילדים, במשרה מלאה, להובלת הפעילות החינוכית במרכז.
+המרכז פועל עם קהילת מבקשי המקלט וחסרי המעמד בדרום תל־אביב-יפו.
+העבודה בשעות אחר הצהריים, ובתפקיד רכז.ת נוער גם בערב.
+
+למה כדאי לכם להצטרף?
+🟡 עבודה משמעותית, עם השפעה על חיי ילדים ונוער.
+🟡 צוות מקצועי ומגובש.
+🟡 הובלה של פעילות חינוכית, פרויקטים ויוזמות.
+🟡 הובלה וליווי של צוות ההדרכה.
+
+דרישות לתפקיד:
+🔷 לרכז.ת נוער: ניסיון משמעותי בעבודה עם בני נוער - חובה.
+🔷 לרכז.ת ילדים: ניסיון בעבודה חינוכית עם ילדים - חובה.
+🔷 ניסיון בהובלת צוות, יתרון.
+🔷 יוזמה ועבודה עצמאית.
+
+לפרטים נוספים ושליחת קורות חיים 👇</p>
     <h3>תיאור</h3><p class="adtext">מרכז קהילתי דרור, דרום תל־אביב-יפו</p></div>
 </article>
 <section class="notes"><h2>חשוב לדעת על הבאנרים</h2><ul><li>הבאנרים מוצגים בגודל ריבועי, 1080 על 1080. גדלים נוספים, לסטורי ולרוחב, יוכנו אחרי בחירת כיוון.</li><li>התמונות נוצרו ב-AI להמחשה, והאנשים בהן בדויים.</li><li>הניסוחים נשענים על נוסחי המשרות ששלחתם ועל הסיכום מהשיחה שלנו.</li><li>הבאנרים והטקסטים ממתינים לאישור שלכם.</li></ul></section>
